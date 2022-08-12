@@ -1,7 +1,7 @@
 # TableBot
 
-Passbot runs a node-cron job that listens for available timeslots for booking table at restaurants listed at dinnerbooking.com.
-When available slots are detected, will post a message to Telegram
+TableBot runs a node-cron job that listens for available timeslots for booking table at restaurants listed at dinnerbooking.com.
+When available slots are detected, it will post a message to Telegram
 
 ## Minutae
 
@@ -20,4 +20,4 @@ When available slots are detected, will post a message to Telegram
 
 - Go to URL `https://api.telegram.org/bot<TELEGRAM_BOT_TOKEN>/getUpdates`
 - ChatId can be found using JSON Path `$.result[*].my_chat_member.chat.id`
-- Repeat the same process for a second group chat with the bot
+- Repeat the same process for an optional second group chat with the bot

@@ -21,5 +21,4 @@ async function go() {
   await getAvailableDates();
 }
 
-go();
-// cron.schedule(`*/${process.env.POLL_INTERVAL} * * * *`, go);
+cron.schedule(`*/${process.env.POLL_INTERVAL} * * * *`, go);
